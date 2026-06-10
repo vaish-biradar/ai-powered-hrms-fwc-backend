@@ -28,7 +28,7 @@ app = FastAPI()
 # Allow CORS for frontend communication
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://www.fwc.co.in","https://jolly-stone-04f2ae30f.6.azurestaticapps.net","http://localhost:3000"],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
